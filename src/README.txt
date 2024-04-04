@@ -42,6 +42,42 @@ Part 1: Theory
 
 2.) Programming
 
+======================
+HOW TO USE:
+======================
+Run the Main.java module.
+
+The program will then begin to scrape the websites.
+The program then will print the websites on CDC Reference page that it was not able to reach. These correspond to links that lead to a 404 on the website.
+When the program is done scraping, the question interface will appear.
+
+Enter a number to select a specific question.
+
+The question will be printed. Input your desired parameter to the question.
+
+Program solution will be printed, followed by the question interface.
+!!!!!!ANSWER WILL APPEAR ABOVE THE QUESTION INTERFACE WHEN PRINTED!!!!
+
+Enter number for next question to be answered.
+
+Program overall approach:
+
+The functional process of the program is as follows. First, the program navigates to Home page and assembles allOceans
+ArrayList, with just the Name and URL.
+
+Then, it navigates to Country Data Codes, and assembles the allCountries ArrayList. However, not all links on the
+CDC website contain active URLs, so rows without a corresponding URL found are printed when assembling the allCountries.
+Similar to allOceans, the entries are just Name and URL.
+
+Then, the allOceans and allCountries are scraped for the target information using the methods found in ProcessEntry class.
+After being processed, all the necessary data fields in each Entry class are filled and available. Processing algorithms
+are split into ocean and country, to make code more efficient and reduce unnecessary method calls.
+
+From this, the Main method can extract the data from each Entry and answer the questions accordingly.
+
+The Main method then prompts the users to ask questions and performs calculations from the fully filled allCountries and allOceans
+ArrayLists.
+
 Program overall approach:
 
 The functional process of the program is as follows. First, the program navigates to Home page and assembles allOceans
