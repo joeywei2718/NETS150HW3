@@ -41,55 +41,30 @@ public class Entry {
 
 
 
-    public String getName() {
-        return name;
-    }
+    public String getName() {return name;}
 
-    public void setName(String name) {
-        this.name = name;
-    }
+    public void setName(String name) {this.name = name;}
 
-    // Getter and Setter methods for 'url'
-    public String getUrl() {
-        return url;
-    }
+    
+    public String getUrl() {return url;}
 
-    public void setUrl(String url) {
-        this.url = url;
-    }
+    public void setUrl(String url) {this.url = url;}
 
-    // Getter and Setter methods for 'lowestPoint'
-    public String getLowestPoint() {
-        return lowestPoint;
-    }
+    public String getLowestPoint() {return lowestPoint;}
 
-    public void setLowestPoint(String lowestPoint) {
-        this.lowestPoint = lowestPoint;
-    }
+    public void setLowestPoint(String lowestPoint) {this.lowestPoint = lowestPoint;}
 
-    // Getter and Setter methods for 'area'
-    public int getArea() {
-        return area;
-    }
+    public int getArea() {return area;}
 
-    public void setArea(int area) {
-        this.area = area;
-    }
+    public void setArea(int area) {this.area = area;}
 
-    // Getter and Setter methods for 'coordinates'
-    public String getCoordinates() {
-        return coordinates;
-    }
+    public String getCoordinates() {return coordinates;}
 
-    public void setCoordinates(String coordinates) {
-        this.coordinates = coordinates;
-    }
+    public void setCoordinates(String coordinates) {this.coordinates = coordinates;}
 
     public void setFlagFeature(String features) { this.flagFeatures = features; }
 
     public String getFlagFeature() { return flagFeatures; }
-
-
 
     public void setBorderCountries(ArrayList<String> borderCountries) {this.borderCountries = borderCountries;}
 
